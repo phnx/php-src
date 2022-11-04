@@ -68,6 +68,7 @@ jobs:
         sudo apt install build-essential autoconf libtool bison re2c pkg-config
         ./buildconf
         ./configure
+        make clean
         
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2

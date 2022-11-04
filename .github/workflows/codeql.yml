@@ -65,6 +65,7 @@ jobs:
     # 📚 See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsrun
       run: |
         echo "Run, Build Application using script"
+        sudo apt install build-essential autoconf libtool bison re2c pkg-config
         ./buildconf
         ./configure
         
